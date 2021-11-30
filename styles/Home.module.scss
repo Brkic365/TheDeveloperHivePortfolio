@@ -1,0 +1,152 @@
+$base-color: #ffdd00;
+$base-color-dark: #2f4858;
+$base-color-light: #f3f3f3;
+
+.home {
+  .mainTitle {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $base-color-dark;
+
+    margin-top: 4rem;
+
+    padding: 0 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 1rem 0;
+    }
+
+    .buttons {
+      margin: 1rem 0;
+      margin-bottom: 5rem;
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      width: 100%;
+
+      button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+        border: 3px solid $base-color-dark;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+
+      .contact {
+        background-color: $base-color-dark;
+        color: $base-color-light;
+
+        &:hover {
+          background-color: transparent;
+          color: $base-color-dark;
+        }
+      }
+
+      .learnMore {
+        color: $base-color-dark;
+
+        &:hover {
+          background-color: $base-color-dark;
+          color: $base-color-light;
+        }
+      }
+    }
+
+    .honeycomb {
+      z-index: 2;
+    }
+
+    .triangle {
+      transform: translate(10%, -45%);
+    }
+  }
+
+  .aboutUs {
+    margin-bottom: 10rem;
+    margin-top: -32rem;
+    color: $base-color-dark;
+    padding: 1rem;
+
+    h2 {
+      padding: 1rem;
+      width: fit-content;
+      font-size: 2rem;
+      border-bottom: 2px solid $base-color-dark;
+    }
+
+    p {
+      padding: 1rem 0 0 1rem;
+    }
+  }
+
+  .numbers {
+    background-color: #fcfcfc;
+    box-shadow: inset 0 50px 20px $base-color-light;
+    padding: 4rem 0;
+  }
+
+  .offers {
+    padding: 1rem;
+    text-align: center;
+    color: $base-color-light;
+    background-color: $base-color-dark;
+
+    .offersGrid {
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-grid-columns: (minmax(7em, 1fr)) [auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+      -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+    }
+
+    h2 {
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+  }
+
+  .prevWork {
+    padding: 1rem;
+    text-align: center;
+    color: $base-color-dark;
+
+    h2 {
+      width: fit-content;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-bottom: 2px solid $base-color-dark;
+    }
+
+    .projectsGrid {
+      justify-content: center;
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-grid-columns: (minmax(14em, 18em)) [auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14em, 18em));
+      -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="50" viewBox="0 0 83 50">
+  <text id="The_Developer_Hive" data-name="The Developer Hive" transform="translate(0 47)" fill="#2f4858" font-size="9" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">The Developer Hive</tspan></text>
+  <g id="Logo" transform="translate(29.088)">
+    <path id="Path_1" data-name="Path 1" d="M.893,8.451,15.961,0l14.71,8.451V23.62L15.407,31.945.893,23.62Z" transform="translate(-0.893 0)" fill="#2f4858"/>
+    <line id="Line_1" data-name="Line 1" x1="13.992" y2="24.289" transform="translate(2.745 0.924)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" x1="13.992" y2="24.289" transform="translate(8.818 4.356)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_13" data-name="Path 13" d="M60,81" transform="translate(-44.054 -49.715)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_14" data-name="Path 14" d="M553.1-217.345v.537L568.943-195.5l.423-.141Z" transform="translate(-553.101 226.758)" fill="#fff"/>
+    <path id="Path_15" data-name="Path 15" d="M619.927-226.552l-15.219-23.256" transform="translate(-591.083 250.65)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_16" data-name="Path 16" d="M648.576-176.508l4.571-8.048v.937l-4.029,6.823Z" transform="translate(-623.37 202.625)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+.counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  color: #2f4858;
+
+  .count {
+    margin: 1rem 0;
+    h1 {
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: center;
+  }
+}
