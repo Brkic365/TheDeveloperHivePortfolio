@@ -27,6 +27,7 @@ export default function Contact() {
       className="container"
       method="POST"
       name="contact-form"
+      action="/"
       onSubmit={() => setSubmitted(true)}
       data-netlify="true"
       data-netlify-honeypot="bot-field"

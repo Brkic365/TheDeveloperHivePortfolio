@@ -156,7 +156,7 @@ export default function Home() {
         <h1>The Developer Hive</h1>
         <p>A Group of Talented Web Developers Ready To Work</p>
         <div className={styles.buttons}>
-          <Link href="#aboutUs">
+          <Link href="#contact">
             <button className={styles.contact}>CONTACT US</button>
           </Link>
           <button className={styles.learnMore}>LEARN MORE</button>
@@ -243,7 +243,7 @@ export default function Home() {
       </div>
 
       {/* Contact Page */}
-      <div id="aboutUs">
+      <div id="contact">
         <Contact/>
       </div>
 
