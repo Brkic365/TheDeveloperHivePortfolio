@@ -55,3 +55,17 @@
         }
     }
 }
+
+@media only screen and (min-width: 800px) {
+    .footer {
+        .blocks {
+            flex-direction: row;
+            place-content: space-evenly;
+            width: 100%;
+
+            .main p {
+                width: 70%;
+            }
+        }
+    }
+}

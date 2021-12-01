@@ -27,3 +27,16 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .project {
+
+        .image {
+            height: 20rem;
+        }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }

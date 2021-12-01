@@ -7,6 +7,7 @@
 
   h3 {
     margin: 1rem 0;
+    font-size: 1rem;
   }
 
   p {
@@ -16,5 +17,18 @@
   &:hover {
     border: 2px dashed #ffdd00;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .offer {
+    text-align: left;
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      display: block;
+    }
   }
 }

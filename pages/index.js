@@ -152,6 +152,7 @@ export default function Home() {
       {/* Main Title Page */}
 
       <div className={styles.mainTitle}>
+      <div className={styles.left}>
         <Image src={logoIcon} alt="Icon of the logo" width="90%" height="90%" />
         <h1>The Developer Hive</h1>
         <p>A Group of Talented Web Developers Ready To Work</p>
@@ -161,8 +162,9 @@ export default function Home() {
           </Link>
           <button className={styles.learnMore}>LEARN MORE</button>
         </div>
-        <Image
-          src={mainHoneycomb}
+      </div>
+        <img
+          src="/honeycombs/main.svg"
           alt="Graphic of a honeycomb"
           className={styles.honeycomb}
         />
@@ -175,7 +177,7 @@ export default function Home() {
 
       {/* About Us Page */}
 
-      <div className={styles.aboutUs}>
+      <div className={styles.aboutUs} id="aboutUs">
         <h2>About Us</h2>
         <p>
           We are a group of talented, hard-working and highly motivated
@@ -208,7 +210,7 @@ export default function Home() {
 
       {/* Offers Page */}
 
-      <div className={styles.offers}>
+      <div className={styles.offers} id="offers">
         <h2>What We Offer</h2>
         <div className={styles.offersGrid}>
           {offers.map((offer) => {
@@ -227,7 +229,7 @@ export default function Home() {
 
       {/* Previous Work Page */}
 
-      <div className={styles.prevWork}>
+      <div className={styles.prevWork} id="prevWork">
       <h2>Previous Work</h2>
       <div className={styles.projectsGrid}>
           {projects.map((project) => {
@@ -243,7 +245,8 @@ export default function Home() {
       </div>
 
       {/* Contact Page */}
-      <div id="contact">
+      <div className={styles.contactContainer} id="contact">
+        <img src="/contact_graphic.svg" />
         <Contact/>
       </div>
 

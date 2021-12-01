@@ -12,7 +12,7 @@ $base-color-light: #f3f3f3;
 
     margin-top: 4rem;
 
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
 
     h1 {
@@ -31,11 +31,11 @@ $base-color-light: #f3f3f3;
       display: flex;
       align-items: center;
       place-content: space-between;
-      width: 100%;
+      width: 90%;
 
       button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
         box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
         border: 3px solid $base-color-dark;
         font-weight: 600;
@@ -68,6 +68,7 @@ $base-color-light: #f3f3f3;
     }
 
     .triangle {
+      margin-left: auto;
       transform: translate(10%, -45%);
     }
   }
@@ -108,8 +109,8 @@ $base-color-light: #f3f3f3;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -ms-grid-columns: (minmax(7em, 1fr)) [auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+      -ms-grid-columns: (minmax(9em, 1fr)) [auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
       -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-column-gap: 1em;
@@ -149,4 +150,153 @@ $base-color-light: #f3f3f3;
       grid-row-gap: 1em;
     }
   }
+
+  .contactContainer img {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 500px) {
+  .home .mainTitle .buttons {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home {
+    .mainTitle {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .buttons {
+        button {
+          font-size: 1rem;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      .honeycomb {
+        width: 80%;
+      }
+
+      .triangle {
+        transform: translate(10%, -60%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home {
+    .mainTitle {
+      .triangle {
+        width: 70%;
+      }
+    }
+
+    .aboutUs {
+      margin-top: -50rem;
+
+      h2 {
+        font-size: 2.3rem;
+      }
+
+      p {
+        width: 70%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .home {
+    .mainTitle {
+      .honeycomb {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    .mainTitle {
+      .buttons {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home {
+    .mainTitle {
+      flex-direction: row;
+
+      .honeycomb {
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+      }
+
+      .triangle {
+        position: absolute;
+        right: 0;
+        top: 75%;
+        width: 50%;
+      }
+    }
+
+    .aboutUs {
+      margin-top: 0rem;
+    }
+
+    .offers {
+      .offersGrid {
+        -ms-grid-columns: (minmax(40%, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+      }
+    }
+
+    .prevWork {
+      .projectsGrid {
+        -ms-grid-columns: (minmax(40%, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    .offers {
+      .offersGrid {
+        -ms-grid-columns: (minmax(20%, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+      }
+    }
+
+    .prevWork {
+      .projectsGrid {
+        -ms-grid-columns: (minmax(30%, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+      }
+    }
+
+    .contactContainer {
+      display: flex;
+      align-items: end;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+
