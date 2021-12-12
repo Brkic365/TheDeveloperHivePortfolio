@@ -1,71 +1,89 @@
 .footer {
-    margin-top: 4rem;
-    color: #2F4858;
+  margin-top: 4rem;
+  color: #2f4858;
 
-    .blocks {
-        padding: 2rem;
+  .blocks {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: space-evenly;
+
+    .contact {
+      .contactField {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        place-content: space-evenly;
-
-        .contact {
-            .contactField {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                margin-bottom: 0.5rem;
-
-                p {
-                    margin-left: 0.5rem;
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        div {
-            display: flex;
-            align-items: center;
-            flex-direction: column; 
-
-            h3 {
-                font-size: 0.9rem;
-                margin: 0.5rem 0;
-            }
-
-            p {
-                text-align: center;
-                font-size: 0.75rem;
-                margin-bottom: 0.5rem;
-            }
-        }
-    }
-
-    .bottomBar {
-        background-color: #E3E3E3;
-        text-align: center;
-        padding: 0.5rem;
+        flex-direction: row;
+        margin-bottom: 0.5rem;
 
         p {
-            font-size: 0.7rem;
-
-            span {
-                font-weight: 600;
-            }
+          margin-left: 0.5rem;
+          margin-bottom: 0;
         }
+      }
     }
+
+    div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h3 {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .bottomBar {
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 0.5rem;
+
+    p {
+      font-size: 0.7rem;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 800px) {
-    .footer {
-        .blocks {
-            flex-direction: row;
-            place-content: space-evenly;
-            width: 100%;
+  .footer {
+    .blocks {
+      flex-direction: row;
+      place-content: space-evenly;
+      width: 100%;
 
-            .main p {
-                width: 70%;
-            }
-        }
+      .main p {
+        width: 70%;
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    .blocks {
+      place-content: space-between;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .footer {
+    .blocks {
+      width: 50%;
+    }
+  }
 }

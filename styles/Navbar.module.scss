@@ -4,11 +4,24 @@
   place-content: space-between;
   padding: 1rem 2rem;
 
+  .links {
+    display: none;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  svg {
+    cursor: pointer;
+    color: #2f4858;
+  }
+
   .mobileMenu {
     position: fixed;
     right: 0;
     top: 0;
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
     height: 100%;
     z-index: 3;
     padding: 2rem;
@@ -21,7 +34,8 @@
       top: 0.5rem;
       width: 1.5rem;
       height: 1.5rem;
-      color: #2F4858;
+      color: #2f4858;
+      cursor: pointer;
     }
 
     li {
@@ -30,11 +44,52 @@
 
     a {
       font-size: 1.2rem;
-      color: #2F4858;
+      color: #2f4858;
     }
 
     ul {
       list-style-type: none;
     }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    .mobileMenu {
+      display: none;
+    }
+
+    svg {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      z-index: 3;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          margin: 0 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .navbar {
+    width: 85%;
+    margin: 0 auto;
   }
 }

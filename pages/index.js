@@ -68,49 +68,49 @@ export default function Home() {
       icon: codeIconOffer,
       alt: "Graphic of a clock",
       title: "Optimized Code",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "We always assure our code stays well documented and optimized.",
     },
     {
       id: 3,
       icon: phoneIcon,
       alt: "Graphic of a phone",
       title: "Responsive",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "We take care so your website looks perfect on all devices. ",
     },
     {
       id: 4,
       icon: loadingIcon,
       alt: "Graphic of a loading spinner",
       title: "Fast Loading",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "Nobody likes long loading. Neither do we. That's why we will try to make your website  as fast as possible.",
     },
     {
       id: 5,
       icon: supportIcon,
       alt: "Graphic of headphones",
       title: "Active Support",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "Customer service is number one here at Developer Hive.",
     },
     {
       id: 6,
       icon: modernIcon,
       alt: "Graphic of pen and a ruler",
       title: "Modern Design",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "We will make sure your website is modern and attracting to customers.",
     },
     {
       id: 7,
       icon: techIcon,
       alt: "Graphic of cables",
       title: "Latest Technologies",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "Our developers never stop learning new technologies to make your website as good as possible by using latest technologies.",
     },
     {
       id: 8,
       icon: browsersIcon,
       alt: "Graphic of a browser window",
       title: "Browser Compatibility",
-      text: "Our team of developers will do their best to deliver your website as soon as possible",
+      text: "All browsers matter. We take care that your vision is the same across all browsers.",
     },
   ];
 
@@ -140,29 +140,35 @@ export default function Home() {
       imgUrl: "/projects/bakmazon.png",
       title: "Baustela",
     },
-  ]
+  ];
 
   return (
     <div className={styles.home}>
-    <Head>
-    <title>The Developer Hive </title>
-    </Head>
+      <Head>
+        <title>The Developer Hive </title>
+      </Head>
       <Navbar />
 
       {/* Main Title Page */}
 
       <div className={styles.mainTitle}>
-      <div className={styles.left}>
-        <Image src={logoIcon} alt="Icon of the logo" width="90%" height="90%" />
-        <h1>The Developer Hive</h1>
-        <p>A Group of Talented Web Developers Ready To Work</p>
-        <div className={styles.buttons}>
-          <Link href="#contact">
-            <button className={styles.contact}>CONTACT US</button>
-          </Link>
-          <button className={styles.learnMore}>LEARN MORE</button>
+        <div className={styles.left}>
+          <img
+            src="/logoIcon.svg"
+            alt="Icon of the logo"
+            className={styles.logo}
+          />
+          <div className={styles.text}>
+            <h1>The Developer Hive</h1>
+            <p>A Group of Talented Web Developers Ready To Work</p>
+            <div className={styles.buttons}>
+              <Link href="#contact">
+                <button className={styles.contact}>CONTACT US</button>
+              </Link>
+              <button className={styles.learnMore}>LEARN MORE</button>
+            </div>
+          </div>
         </div>
-      </div>
         <img
           src="/honeycombs/main.svg"
           alt="Graphic of a honeycomb"
@@ -230,8 +236,8 @@ export default function Home() {
       {/* Previous Work Page */}
 
       <div className={styles.prevWork} id="prevWork">
-      <h2>Previous Work</h2>
-      <div className={styles.projectsGrid}>
+        <h2>Previous Work</h2>
+        <div className={styles.projectsGrid}>
           {projects.map((project) => {
             return (
               <Project
@@ -247,7 +253,7 @@ export default function Home() {
       {/* Contact Page */}
       <div className={styles.contactContainer} id="contact">
         <img src="/contact_graphic.svg" />
-        <Contact/>
+        <Contact />
       </div>
 
       {/* Footer Page */}
